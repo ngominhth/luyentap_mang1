@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="hien_thi"></p>
+    <p id="ket_qua"></p>
+ <script>
+     let mang=new Array();
+     let soNguyen=prompt("nhập số nguyên");
+     let data=document.getElementById("hien_thi");
+     let ket_qua=document.getElementById("ket_qua");
+     for(i=0;i<10;i++)
+     {
+        let nhapSo=prompt("Nhập số phần tử");
+        mang.push(nhapSo);
+     }
+     data.innerHTML=mang;
+     for(j=0; j<mang.length;j++ )
+     {
+         if(soNguyen===mang[j])
+         {
+            
+             mang.splice(j,1);
+         }
+     }
+     ket_qua.innerHTML=mang;
+ </script>   
+</body>
+</html>

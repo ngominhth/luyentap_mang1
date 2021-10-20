@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="hien_thi"></p>
+    <script>
+        let manga=new Array();
+        let mangb=new Array();
+        let mangc=new Array();
+        let hien_thi=document.getElementById("hien_thi");
+        for(i=0;i<9;i++)
+        {
+            let phantu_a=prompt("Nhập phần tử a");
+            let phantu_b=prompt("Nhập phần tử b");
+            manga.push(phantu_a);
+            mangb.push(phantu_b);
+            mangc=manga.concat(mangb);
+        }
+        hien_thi.innerHTML=mangc;
+    </script>
+</body>
+</html>

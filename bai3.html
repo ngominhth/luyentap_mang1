@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <p id="hien_thi"></p>
+ <script>
+     let hien_thi=document.getElementById("hien_thi");
+     let mang=[1,2,3,4,5,6,7,8,9,10];
+    
+     data="";
+     let max=mang[0];
+     total=0;
+     for(let i=0; i<=mang.length; i++)
+     {
+         if(mang[i]>max)
+         {
+             max=mang[i];
+            
+         }
+         total=total+i;
+     }
+     data+="giá trị lớn nhất: "+max+"<br>"+"Giá trị trung bình của mảng: "+total/mang.length;
+     hien_thi.innerHTML=data;
+ </script>   
+</body>
+</html>

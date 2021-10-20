@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="hien_thi"></p>
+   <script>
+       let hien_thi=document.getElementById("hien_thi");
+       let mang=[1,2,3,4,5,6,7,8,9];
+       let data="";
+       let index=0;
+       let max=mang[0];
+       for(let i=0; i<mang.length; i++)
+       {
+           if(mang[i]>max)
+           {
+               max=mang[i];
+               index=i;
+              
+           }
+       }
+       data+="giá trị max: "+max+" vị trí: "+index;
+       hien_thi.innerHTML=data;
+       
+   </script> 
+</body>
+</html>
